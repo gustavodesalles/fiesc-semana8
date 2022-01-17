@@ -23,7 +23,7 @@ public enum Arma {
         this.pontosAtaque = 5;
     }
 
-    private int getPontosAtaque() {
+    public int getPontosAtaque() {
         return this.pontosAtaque;
     }
 }
