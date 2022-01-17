@@ -1,7 +1,9 @@
-package bfinal;
+package bfinal.jogadores;
 
+import bfinal.Personagem;
 import bfinal.enums.Arma;
 import bfinal.enums.Motivacao;
+import bfinal.jogadores.Jogador;
 
 import java.util.concurrent.ThreadLocalRandom;
 

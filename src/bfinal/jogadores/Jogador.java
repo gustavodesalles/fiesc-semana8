@@ -1,5 +1,7 @@
-package bfinal;
+package bfinal.jogadores;
 
+import bfinal.Atacante;
+import bfinal.Personagem;
 import bfinal.enums.Arma;
 import bfinal.enums.Motivacao;
 

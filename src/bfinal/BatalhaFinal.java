@@ -3,6 +3,7 @@ package bfinal;
 import bfinal.enums.Arma;
 import bfinal.enums.Motivacao;
 import bfinal.inimigos.*;
+import bfinal.jogadores.*;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

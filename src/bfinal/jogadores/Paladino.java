@@ -1,21 +1,23 @@
-package bfinal;
+package bfinal.jogadores;
 
+import bfinal.Personagem;
 import bfinal.enums.Arma;
 import bfinal.enums.Motivacao;
+import bfinal.jogadores.Jogador;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Arqueiro extends Jogador {
-    public Arqueiro(String nome, String sexo, Motivacao motivacao, Arma arma) throws IllegalArgumentException {
-        super(18, 13, nome, sexo, motivacao, arma);
-        if (arma != Arma.ARCO && arma != Arma.BESTA) throw new IllegalArgumentException();
+public class Paladino extends Jogador {
+    public Paladino(String nome, String sexo, Motivacao motivacao, Arma arma) throws IllegalArgumentException {
+        super(13, 18, nome, sexo, motivacao, arma);
+        if (arma != Arma.MARTELO && arma != Arma.CLAVA) throw new IllegalArgumentException();
     }
 
     @Override
     public void atacar(Personagem personagem) {
         String nomeArma = "";
-        if (getArma() == Arma.ARCO) nomeArma = "com seu arco, a flecha atingiu";
-        if (getArma() == Arma.BESTA) nomeArma = "com sua besta, o virote atingiu";
+        if (getArma() == Arma.MARTELO) nomeArma = "com seu martelo";
+        if (getArma() == Arma.CLAVA) nomeArma = "com sua clava";
 
         int roll = ThreadLocalRandom.current().nextInt(1, 21);
         if (roll == 1) {
